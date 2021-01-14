@@ -10,7 +10,7 @@ body {
 }
 
 
-@media (min-width: 700px){
+@media (min-width: 768px){
     .main-header{
         display: flex;
         line-height: 0;
@@ -49,15 +49,17 @@ body {
          
             
         .about-me-right{  width:100%;   
-        
-
-
- 
-           
-    }
+        }
 .my-profile img{ margin-top: 100px;
 
-}}
+    
+    }
+    .portfolio{grid-template-columns: repeat(2, 1fr); }
+
+    
+        
+    }
+
 
 
 a {
@@ -99,7 +101,7 @@ img{max-width: 100%;
 }
 .main-header h1{
     color:#000;
-    font-size: 40px;
+    font-size: 38px;
     font-weight:600px;
 
 
@@ -181,7 +183,7 @@ img{max-width: 100%;
 
 .portfolio{display: grid;
     background-color:coral;
-    grid-template-columns: ;
+    margin: 0 auto;
     padding: 10px;
     grid-gap: 20px;
 
@@ -204,10 +206,11 @@ img{max-width: 100%;
 
 .contact-text{ font-style: oblique;
     color: teal;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400px;
     text-align: center;
     line-height: 1.2em;
+    
 
 }
 .contact-form{ 
