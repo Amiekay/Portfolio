@@ -10,7 +10,7 @@ body {
 }
 
 
-@media (min-width: 800px){
+@media (min-width: 700px){
     .main-header{
         display: flex;
         line-height: 0;
@@ -99,8 +99,8 @@ img{max-width: 100%;
 }
 .main-header h1{
     color:#000;
-    font-size: 50px;
-    font-weight:600 ;
+    font-size: 40px;
+    font-weight:600px;
 
 
 }
@@ -181,7 +181,7 @@ img{max-width: 100%;
 
 .portfolio{display: grid;
     background-color:coral;
-    grid-template-columns: auto auto;
+    grid-template-columns: ;
     padding: 10px;
     grid-gap: 20px;
 
@@ -192,11 +192,10 @@ img{max-width: 100%;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #cccccc;
-    padding: 20px;
-     font-size: 20px;
-     text-align: center;
-   
+        border: 1px solid #cccccc;
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
 }
 
     
