@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body><a name="HOME"></a>
+<body id="HOME">
+  <!--<a name="HOME"></a> added ID to each section *** linking a section like this is fine but common practice
+         is to use an ID instead. Also so you can style the section in CSS using the ID selector-->
 
     <header class="main-header">
-        <h1>KALU'S<span>Portfolio</span> </h1><!--replace with a logo-->
+        <h1>KALU'S<span>Portfolio</span><!-- there is no css stying for this <span> tag --> </h1><!--replace with a logo-->
       <nav class="nav-bar">
         <ul class="nav-list">
           <li>
@@ -29,7 +31,14 @@
       </nav>  
     </header>
 
-    <section  class="about-me"> <a name="ABOUT"></a>
+<!--Instead of having a class for every heading, e.g about-me-heading, 
+  portfolio-heading etc, I think it is better to have just one unique class and styling for all your headings.. 
+  It is easier that way and it saves you from writing too many css codes-->
+
+   <!-- I am going to comment out your code and do a simple redesign for the about section, 
+    simply remove the commebt tags and delete mine if youre not fine with it
+
+     <section  class="about-me" id="ABOUT"> <a name="ABOUT"></a>
       <div class="my-profile">
         <img src="images\Amyy.jpg" alt="Amarachi's image" width="192.4px" height="213.7px" >
         <h1 class="about-me-title"> KALU AMARACHI </h1>
@@ -43,7 +52,9 @@
 
         <div class="about-me-middle">
           <p>
-          I am a tech enthusiast, with special interest in web development. I've mastered the use of HTML and CSS in web development. I look forward to mastering Javascript and other languages necessary for a career in web dev. 
+          I am a tech enthusiast, with special interest in web development.
+           I've mastered the use of HTML and CSS in web development. 
+           I look forward to mastering Javascript and other languages necessary for a career in web dev. 
          </p>
        </div>
 
@@ -53,14 +64,38 @@
       </div>
 
     </section>
+   --> 
 
-    <section><a name="PORTFOLIO"></a>
+    <section id="ABOUT" class="about">
+      <div class="intro">
+         <img src="images/Amyy.jpg" alt="Amarachi's image">
+         <div class="write_up">
+           <h1>KALU AMARACHI</h1>
+           <h3>WEB DEVELOPER</h3>
+           <p>
+             I am a tech enthusiast, with special interest in web development. <br>
+             I've mastered the use of HTML and CSS in web development. <br>
+             I look forward to mastering Javascript and other languages necessary for a career in web dev. 
+         </p>
+         </div>
+         
+      </div>
+       <h3>Web development Process</h3>
+      <div class="images">
+        <img src="images\img1.jpg" alt="an image of a laptop on a table">
+        <img src="images\p4.jpg" alt="an image of a desktops on a table">
+      </div>
+
+    </section>
+<hr>
+    <section id="PORTFOLIO">
+      <!--<a name="PORTFOLIO"></a>  -->
       <h2 class="portfolio-heading">Portfolio</h2>
     
       <div class="portfolio">
         <div class="portfolio-item">
           <figure>
-            <a href="#"><img src="images\stella-ameyo-adadevoh.jpg" alt="A picture of Dr Ameyo Adadevoh"width" ></a>
+            <a href="#"><img src="images\stella-ameyo-adadevoh.jpg" alt="A picture of Dr Ameyo Adadevoh" ></a>
             <figcaption>
                <h2><a href="#">Tribute page</a></h2>
                <p>A tribute to Dr Ameyo Adadevoh, popularly known as Ebola hero .The web page was built solely with HTML and CSS</p>
@@ -104,9 +139,9 @@
     </section>
     
 <br>
-    <section><a name="CONTACT"></a>
+    <section id="CONTACT"><!--<a name="CONTACT"></a>-->
       <div class=contacts>
-        <div class="contact-text">
+        <div class="contact-text"><!--No need to have different heading tags since there a div class font styling-->
           <h2>Contact me</h2>
           <h3>Lets create magic together!</h3>
         </div>
@@ -120,32 +155,29 @@
           </label>
 
           <label for="name"><br>Message<br>
-            <input type="message" id="name" placeholder="write a message"> 
+            <input type="textarea" id="name" placeholder="write a message"> 
           </label>
 
           
-          <button>
-           Send
-          </button>
+          <button class="btn"  type="submit"> Send </button>
         </form>
 
         <p class="socials">Follow me on social media</p>
-        <ul class="brand-icons">
+        <ul class="brand-icons"><!--Your social media should link to your profile -->
           <li class="social-links">
-          <a href="#"><img src="images\th.jpg" width="55" alt="facebook icon"> Facebook</a>
+          <a href="#"><img src="images\th.jpg" width="15px" alt="facebook icon"> Facebook</a>
           </li>
           <li>
-          <a href="#"><img src="images\inst.jpg" width="71" alt="instagram icon"> Instagram</a>
+          <a href="#"><img src="images\inst.jpg" width="20px" alt="instagram icon"> Instagram</a>
           </li>
           <li>
-          <a href="#"><img src="images\twit.jpg" width="71" alt="twitter icon"> Twitter</a>
+          <a href="#"><img src="images\twit.jpg" width="20px" alt="twitter icon"> Twitter</a>
           </li>
         </ul>
       </div>
     </section>
     <footer> 
-      <p class="Copyright"><img src="images\copyright.jpg" width="19">2021 Kalu Amarachi;s Portfolio</p>
+      <p &copy class="Copyright"><img src="images\copyright.jpg" width="10px">2021 Kalu Amarachi's Portfolio</p>
     </footer>
-
 </body>
 </html>
